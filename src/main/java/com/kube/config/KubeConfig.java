@@ -26,6 +26,7 @@ public class KubeConfig {
     public ApiClient apiClient() {
         ApiClient kubeApiClient = null;
         try {
+        	System.out.println("configPath-->" + configPath);
             kubeApiClient = Config.fromConfig(configPath);
         } catch (IOException e) {
             e.printStackTrace();

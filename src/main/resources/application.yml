@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8084
   session:
     timeout: 10
   tomcat:
@@ -7,7 +7,10 @@ server:
 spring:
   mvc:
     static-path-pattern: /**
+#  resources:
+#    static-locations: classpath:/static
 
 kubernetes:
   config:
-    config-path: /root/.kube/config
+    #config-path: /root/.kube/config
+    config-path: D:\\git\\config 
